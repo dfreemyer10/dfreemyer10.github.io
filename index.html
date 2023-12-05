@@ -1,0 +1,216 @@
+
+<!doctype html>
+<html lang="en" class="view html5-player">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- BEGIN CUSTOM HEAD HTML -->
+    <!-- END CUSTOM HEAD HTML -->
+
+        <base id="cerosBase">
+
+        <script type="text/javascript">
+            (function () {
+                var locationWithNoQuery = document.location.href.split('?')[0].split('#')[0];
+                locationWithNoQuery = locationWithNoQuery.replace(/[><\(\)'"]/g,'');
+
+                if (document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                } else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(\/p|\/page)\/[a-z0-9-]*\/?$/, '/');
+                }
+
+                document.getElementById('cerosBase').href = window.cerosBaseUrl;
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+    <script type="text/javascript">
+        window.cerosContext = {
+        viewAssetsDomain    : '',
+            publicAssetsBaseUrl: 'assets/',
+            isEmbedded: top != window,
+            isVanityDomain: location.hostname !== 'view.ceros.com',
+            previewMode: false,
+            logging: {
+            emitDevWarnings : false,
+                modes: {
+                        'debug': false,
+                        'info': false,
+                        'warn': true,
+                        'error': true
+                }
+            },
+            usePageSlugsInNavigation: false,
+            usePreviewBanner: false,
+            useDocumentLoadingSpinner: true,
+            analyticsApplicationKey: 'player',
+            analyticsMaxDwellTime: 1800,
+            analyticsUrl: '',
+            apiVersion: 'v1',
+            revalidateWithCore: false,
+
+            ajaxCaching: true,
+        mediaDomainMap: null,
+            rollbarPlayerAccessKey: '61d7450b926c4268b5f89b75862f33a9',
+            deploymentName: 'prod',
+            appVersion: '8.13.7',
+            rollbarMaxItems: 5,
+        isExported: true,
+            isStudio: false,
+
+            openGraphUrl: '',
+            accountSlug: 'bp-studio',
+        gracePeriodExpired  : 9007199254740991 < Date.now() / 1000,
+            appSlug: 'google-x-onboarding',
+            issueAliasSlug: 'x-onboarding-site-prototype',
+            issue: {"id":749015,"projectId":110633,"slug":"experience-63f61a7d52ce7","name":"X - Onboarding Site - Prototype","status":"published","creationDate":"2023-02-22T13:37:01.000Z","lastModifiedDate":"2023-02-23T15:25:49.000Z","deletionDate":null,"firstPublishedDate":"2023-02-22T15:40:08.000Z","wipExperienceVersionId":2986518,"publishedExperienceVersionId":2991177,"createdByMemberId":8861,"primaryIssueAliasId":1046497,"firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/bp-studio\/studio-thumbnails\/page-63f61a7b67482.jpg","importLinkShared":0,"lastPublishedDate":"2023-02-23T15:27:55.000Z","lastModifiedByMemberId":8861,"lastPublishedByMemberId":8861,"passwordProtected":0,"isSSOProtected":0,"auth0UserId":null,"isTemplate":0,"templateSubtitle":null,"templateThumbnailUrl":null,"htmlLanguage":"en","lastUnpublishedDate":null,"lastUnpublishedByMemberId":null,"resourceId":"63f61a7d-c686430039eeb","title":"X - Onboarding Site - Prototype"},
+            docVersion: {"id":2991177,"experienceId":749015,"slug":"experience-version-63f785fb10fe6","loadLowRes":1,"seoNoIndex":1,"googleAnalyticsId":null,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/bp-studio\/doc-version-json\/v11\/experience-version-63f785fb10fe6.js","themingBackgroundImageUri":null,"seoTitleKeywords":"","seoMetaKeywords":"","seoMetaDescription":"","canonicalUrlOverride":"","editorPagesManifest":[{"uri":"\/v1\/account\/bp-studio\/pages\/page-63f785fb10ff3","initiallyDisabled":false,"overrides":{"mobile":{"initiallyDisabled":false}},"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/bp-studio\/page-thumbnails\/2023\/02\/23\/ec92d0cc0044140156d2b78f9a220972\/page-thumbnail.jpg?imageOpt=1&crop=870,562,x0,y0"},{"uri":"\/v1\/account\/bp-studio\/pages\/page-63f785fb1fe45","overrides":{"mobile":{"initiallyDisabled":false}},"initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/bp-studio\/page-thumbnails\/2023\/02\/23\/08888bf3329171b098d6ef95eea7402c\/page-thumbnail.jpg?imageOpt=1&crop=870,562,x0,y0"},{"uri":"\/v1\/account\/bp-studio\/pages\/page-63f785fb2808c","overrides":{"mobile":{"initiallyDisabled":false}},"initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/bp-studio\/page-thumbnails\/2023\/02\/23\/c52ea0fe2b4c45f59080665178f88ac1\/page-thumbnail.jpg?imageOpt=1&crop=870,562,x0,y0"},{"uri":"\/v1\/account\/bp-studio\/pages\/page-63f785fb2d605","overrides":{"mobile":{"initiallyDisabled":false}},"initiallyDisabled":false,"thumbnail":"https:\/\/media-s3-us-east-1.ceros.com\/bp-studio\/page-thumbnails\/2023\/02\/23\/2e8c95a8d4009eceecba55cb7770d1cc\/page-thumbnail.jpg?imageOpt=1&crop=870,562,x0,y0"}],"cdeExportUrl":"https:\/\/ceros-media-s3-us-east-1.s3.amazonaws.com\/bp-studio\/issue-export\/experience-63f61a7d52ce7-02-23-2023-1527.cde","exportAppVersion":"8.11.1","creationDate":"2023-02-23T15:27:55.000Z","modificationDate":"2023-09-20T08:31:01.000Z","publishedDate":"2023-02-23T15:27:55.000Z","committedByMemberId":8861,"unsupportedBrowserRedirectUrl":"","ogTitle":"","ogDescription":"","ogImageUrl":null,"twitterTitle":"","twitterDescription":"","twitterImageUrl":null,"twitterHandle":"","lazyLoading":0,"tarExportUrl":"https:\/\/ceros-media-s3-us-east-1.s3.amazonaws.com\/bp-studio\/issue-export\/experience-63f61a7d52ce7-02-23-2023-1527.tar.gz","pageNamesInTitle":0,"mainContentLinkText":null,"textMode":"paragraph","zoomControlsEnabled":1,"requireUserConsentForAnalytics":0,"integrateWithCmp":0,"lineHeightCompatibility":"no_baseline_offset","layoutSettings":{"layoutPrimarySetting":"device-type","maxTabletWidthBreakpoint":1280,"maxMobileWidthBreakpoint":800,"deviceTypeMissingVariantFallback":"desktop"},"carousel":{"enabled":0,"autoTransition":0,"autoTransitionDelay":"5"},"theming":{"arrowsEnabled":0,"swipeEnabled":1,"menuEnabled":0,"backgroundColor":"#262626","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+            fontManifest: {"Google|Roboto|100|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":100,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|100|normal","variantName":"Thin","cssFamilyName":"Roboto","api":"Google"},"Google|Roboto|300|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":300,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|300|normal","variantName":"Light","cssFamilyName":"Roboto","api":"Google"},"Google|Roboto|400|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|400|normal","variantName":"Normal","cssFamilyName":"Roboto","api":"Google"},"Google|Roboto|700|normal":{"familyName":"Roboto","familyGuid":"Google|Roboto","fontWeight":700,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"variantGuid":"Google|Roboto|700|normal","variantName":"Bold","cssFamilyName":"Roboto","api":"Google"},"Google|Roboto Mono|100|normal":{"familyName":"Roboto Mono","familyGuid":"Google|Roboto Mono","fontWeight":100,"fontStyle":"normal","unitsPerEm":2048,"ascent":1638,"variantGuid":"Google|Roboto Mono|100|normal","variantName":"Thin","cssFamilyName":"Roboto Mono","api":"Google"},"Google|Roboto Mono|300|normal":{"familyName":"Roboto Mono","familyGuid":"Google|Roboto Mono","fontWeight":300,"fontStyle":"normal","unitsPerEm":2048,"ascent":1638,"variantGuid":"Google|Roboto Mono|300|normal","variantName":"Light","cssFamilyName":"Roboto Mono","api":"Google"}},
+        whiteLabeling   : true,
+        isTrialAccount      : false,
+        allowCommerceIntegration  : false,
+        allowEmbeddedPlayerSdk    : true,
+        allowAdaptiveLayouts: true,
+            commerceSettings: {
+            panelWidth      : null,
+            panelHeight     : null,
+                productUrl: '',
+                shoppingCartUrl: '',
+            },
+                themeObj: {
+                arrowsEnabled    : false,
+                swipeEnabled     : true,
+                menuEnabled      : false,
+                    menuFgColor: '#FFFFFF',
+                    menuBgColor: '#000000',
+                    menuHoverOpacity: 0.6,
+                    backgroundColor: '#262626',
+                backgroundImage  :
+                        null
+
+                },
+            googleFontUrl: '',
+            featureFlags: {"Password Protected Experiences":true,"Getty Image Integration":false,"Getty Video Integration":false,"Accessibility":false,"(BETA) Viewer Role":false,"(BETA) Reviewer Role":false,"(BETA) Protected Preview":false,"(BETA) Enable Welcome Message for Early Access Roles":false,"Cookie Compliance":true,"Position Interactions":true,"Editor":true,"(BETA) Account Level Roles":false,"New Text Tool":true,"Studio API":false,"Global Search":false,"SSO Protected Experiences":false,"Studio Redesign":true,"Admin Redesign":true,"(New Text Tool) List And Bullets":false,"(New Text Tool) Subscript And Superscript":false,"(New Text Tool) Html Element":true,"(New Text Tool) Object States":false,"(New Text Tool) Spellcheck":false,"Editor for Creators":false,"CloudFlare Media Service":false,"CloudFlare App Service":false,"CloudFlare ShareJS Service":false,"CloudFlare Assets Service":false,"Remove window.eval":true,"Editor Image Crop And Resize":true,"Editor Debug Mode":false,"Improved Team Management":true,"(New Text Tool) Columns":true,"Gemma":false,"App Switcher":true,"Experience Sharing":true,"Open in MarkUp":true,"Create Account from Login":true,"Individual Accounts":true,"AI Templates":true,"New Text Tool Experience Converter (requires New Text Tool)":true,"Studio Lite":true,"Intercom Support Chat":true,"Editor Sign Up":false},
+            analyticsTrackers: {
+                cerosPlayerTracker: {enabled: true },
+                googleAnalyticsTracker: {"enabled":false},
+                googleTagManagerTracker: {"enabled":false},
+                marketoTracker: {enabled: false, accountId: '' },
+                eloquaTracker: {enabled: false, siteId: '', cookieDomain: ''},
+                universalAnalyticsTracker: {enabled: false }
+            },
+
+        
+            useOptimizedJs: true,
+        };
+    </script>
+
+    <!--
+      DISPLAY SETTINGS
+    -->
+        <meta name="viewport"
+                  content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="monitor-signature" content="monitor:player:html5"/>
+
+    <title>X - Onboarding Site - Prototype</title>
+
+
+
+        <meta name="robots" content="noindex, nofollow"/>
+
+    <meta property="og:title" content="X - Onboarding Site - Prototype"/>
+        <meta property="og:image" content="media/ec92d0cc0044140156d2b78f9a220972/page-thumbnail.jpg"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="X - Onboarding Site - Prototype">
+    <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="media/ec92d0cc0044140156d2b78f9a220972/page-thumbnail.jpg">
+
+    <script language="Javascript" id="docversion-request-script">
+        window.docVersionRequest = window.jQuery.ajax({
+            url           : "media/experience-version-63f785fb10fe6.js",
+            dataType      : 'jsonp',
+            jsonp         : false, 
+            cache         : true,  
+            jsonpCallback : "loadDocVersion_v1_account_bp_studio_document_versions_experience_version_63f785fb10fe6",
+            success       : window.jQuery.noop 
+        });
+    </script>
+
+    <!--
+      FONTS
+    -->
+
+    
+
+
+
+    <script type="text/javascript">
+        window.cerosPlayerLoadStart = new Date();
+    </script>
+
+    <!--
+        Although the player itself no longer uses requirejs, users can still use requirejs with
+        the SDK. Therefore, we need to continue including it here... for now...
+    -->
+    <script
+        type="text/javascript"
+        crossorigin="anonymous"
+        src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js">
+    </script>
+
+    <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.f1218c9d78317951cc134eeb831ecc55.js">
+    </script>
+
+    <link rel="stylesheet" type="text/css"
+          href="assets/player/applications/html5-player/css/html5-player.0298c186510590de52132b2d5ee47c65.css"/>
+
+    <style>
+        body {
+            background-color: #262626;
+        }
+
+        body:-ms-fullscreen::-ms-backdrop {
+            background-color: #262626;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+    <noscript>
+        
+    </noscript>
+
+
+<div id="main"></div>
+<div id="backgroundContainer"></div>
+
+
+    <!-- BEGIN CUSTOM HTML -->
+    
+    <!-- END CUSTOM HTML -->
+
+
+
+    <div id="page-transition-aria-live" class="sr-only" aria-live="assertive"></div>
+</body>
+</html>

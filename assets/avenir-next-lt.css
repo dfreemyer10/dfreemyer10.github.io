@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Avenir Next LT';
+  src: url('Avenir Next LT W05 Thin.woff2') format('woff2'),
+    url('Avenir Next LT W05 Thin.woff') format('woff');
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Avenir Next LT';
+  src: url('Avenir Next LT W05 Ultra Light.woff2') format('woff2'),
+    url('Avenir Next LT W05 Ultra Light.woff') format('woff');
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Avenir Next LT';
+  src: url('Avenir Next LT W05 Light.woff2') format('woff2'),
+    url('Avenir Next LT W05 Light.woff') format('woff');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Avenir Next LT';
+  src: url('Avenir Next LT W05 Regular.woff2') format('woff2'),
+    url('Avenir Next LT W05 Regular.woff') format('woff');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Avenir Next LT';
+  src: url('Avenir Next LT W05 Medium.woff2') format('woff2'),
+    url('Avenir Next LT W05 Medium.woff') format('woff');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Avenir Next LT';
+  src: url('Avenir Next LT W05 Demi.woff2') format('woff2'),
+    url('Avenir Next LT W05 Demi.woff') format('woff');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Avenir Next LT';
+  src: url('Avenir Next LT W05 Bold.woff2') format('woff2'),
+    url('Avenir Next LT W05 Bold.woff') format('woff');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Avenir Next LT';
+  src: url('Avenir Next LT W05 Heavy.woff2') format('woff2'),
+    url('Avenir Next LT W05 Heavy.woff') format('woff');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Avenir Next LT';
+  src: url('Avenir Next LT W05 Thin Italic.woff2') format('woff2'),
+    url('Avenir Next LT W05 Thin Italic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Avenir Next LT';
+  src: url('Avenir Next LT W05 Ult Light I.woff2') format('woff2'),
+    url('Avenir Next LT W05 Ult Light I.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Avenir Next LT';
+  src: url('Avenir Next LT W05 Light Itali.woff2') format('woff2'),
+    url('Avenir Next LT W05 Light Itali.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Avenir Next LT';
+  src: url('Avenir Next LT W05 Italic.woff2') format('woff2'),
+    url('Avenir Next LT W05 Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Avenir Next LT';
+  src: url('Avenir Next LT W05 Medium It.woff2') format('woff2'),
+    url('Avenir Next LT W05 Medium It.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Avenir Next LT';
+  src: url('Avenir Next LT W05 Demi Italic.woff2') format('woff2'),
+    url('Avenir Next LT W05 Demi Italic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Avenir Next LT';
+  src: url('Avenir Next LT W05 Bold Italic.woff2') format('woff2'),
+    url('Avenir Next LT W05 Bold Italic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Avenir Next LT';
+  src: url('Avenir Next LT W05 Heavy Itali.woff2') format('woff2'),
+    url('Avenir Next LT W05 Heavy Itali.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
